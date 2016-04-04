@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $.ajax({
-    url: 'docx.txt'
+    url: 'docx.txt',
+    cache: false
   }).done(function(data){
     $('#first').click(function(){
       $('#second').html(data);
