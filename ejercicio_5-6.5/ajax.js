@@ -10,6 +10,7 @@ $(document).ready(function() {
         url:'docx2.txt',
         cache: false
       }).done(function(data){
+          $('#second').append("<p></p>");
           $('#second').append(data);
       });
 
